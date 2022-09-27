@@ -1,7 +1,6 @@
 #include "Leetcode.h"
 
-
-int romanToInt(char* s)
+int romanToInt(char *s)
 {
 	int sum = 0;
 	if (s)
@@ -14,7 +13,7 @@ int romanToInt(char* s)
 			if (*(s + 1) == '\0')
 			{
 				next = '\0';
-		 	}
+			}
 			else
 			{
 				next = *(s + 1);
@@ -34,13 +33,12 @@ int romanToInt(char* s)
 	return sum;
 }
 
-
-char* reverseWords(char* s)
+char *reverseWords(char *s)
 {
 	// char n[30] = "rahul chaudhary is a good boy";
 	int size = strlen(s);
-	char output[size + 1]; //Output
-	
+	char output[size + 1]; // Output
+
 	char BUFFER[100];
 
 	int index = 0;
@@ -51,7 +49,7 @@ char* reverseWords(char* s)
 	{
 		if (*(s + index) == ' ')
 		{
-			if(bindex > 0)
+			if (bindex > 0)
 				BUFFER[counter++] = ' ';
 			BUFFER[counter] = '\0';
 			flip_word_without_len(BUFFER);
@@ -84,9 +82,10 @@ char* reverseWords(char* s)
 	return s;
 }
 
-struct ListNode {
+struct ListNode
+{
 	int val;
-	struct ListNode* next;
+	struct ListNode *next;
 };
 
 int modules(int num)
@@ -94,7 +93,7 @@ int modules(int num)
 	return num % 10;
 }
 
-struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2)
+struct ListNode *addTwoNumbers(struct ListNode *l1, struct ListNode *l2)
 {
 	return NULL;
 }
