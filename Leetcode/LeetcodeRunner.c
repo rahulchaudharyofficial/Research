@@ -1,4 +1,5 @@
 #include "Leetcode.h"
+#include "Stack.h"
 
 int main(int argc, char **argv)
 {
@@ -15,6 +16,17 @@ int main(int argc, char **argv)
 	//char n[10] = "hehhhhhhe";
 	//reverseWords(n);
 	//printf("%s\n", n);
-	printf("%d\n", modules(18));
+	//printf("%d\n", modules(18));
+
+	stack_t* stack = create_stack();
+	int* t = NULL;
+	for (int i = 1; i <= 10; i++)
+	{
+		t = (int*) malloc(sizeof(int));
+		*t = i;
+		append(t, stack);
+	}
+	print_stack(stack);
+
 	return EXIT_SUCCESS;
 }

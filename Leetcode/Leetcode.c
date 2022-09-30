@@ -37,7 +37,7 @@ char *reverseWords(char *s)
 {
 	// char n[30] = "rahul chaudhary is a good boy";
 	int size = strlen(s);
-	char output[size + 1]; // Output
+	const char output[size + 1]; // Output
 
 	char BUFFER[100];
 
